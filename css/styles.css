@@ -1,10 +1,21 @@
+/* GENERAL RESET AND STYLES */
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
+  display: flex;
+  justify-content: center;
 }
 
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* HEADER STYLES */
 header {
   background: #333;
   color: #fff;
@@ -12,16 +23,33 @@ header {
   text-align: center;
 }
 
+.logo {
+  height: 80px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 nav a {
   color: #fff;
-  margin: 0 1rem;
   text-decoration: none;
 }
 
+/* MAIN CONTENT */
 main {
-  padding: 2rem;
+  padding: 2rem 0;
+  text-align: center;
 }
 
+/* FORMS (if needed) */
 form {
   display: flex;
   flex-direction: column;
@@ -33,7 +61,8 @@ form label {
   margin-top: 1rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   padding: 0.5rem;
   margin-top: 0.5rem;
 }
@@ -47,16 +76,22 @@ button {
   cursor: pointer;
 }
 
-/* LOGO STYLES */
-.logo {
-  height: 100px; /* Adjust size here */
-  margin-right: 1rem;
-  vertical-align: middle;
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
 }
 
+/* RESPONSIVE TWEAKS */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
-nav a {
-  color: #fff;
-  margin-left: 1rem;
-  text-decoration: none;
+  .logo {
+    height: 60px;
+  }
 }
