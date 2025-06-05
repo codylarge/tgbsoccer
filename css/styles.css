@@ -3,7 +3,11 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  background-image: url('../img/background.webp'); /* Update the filename */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensures it covers full height */
   display: flex;
   justify-content: center;
 }
@@ -13,6 +17,7 @@ body {
   max-width: 800px;
   padding: 1rem;
   box-sizing: border-box;
+  background: #3a72b8;
 }
 
 /* HEADER STYLES */
